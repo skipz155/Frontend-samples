@@ -1,2 +1,2 @@
 # Frontend-samples
-Contains various frontend samples CSS/HTML
+Contains various frontend samples CSS/HTML (Bootstrap, SASS)

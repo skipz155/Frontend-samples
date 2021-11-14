@@ -1,20 +1,22 @@
 body {
-  background-color: #222227;
-  margin: 0;
-  padding: 0;
-  transform: translateY(-9%);
-  font-family: "Nunito Sans", sans-serif;
+  min-height: 100vh;
+	background-color: #222227;
+	margin: 0;
+	padding: 0;
+	font-family: "Nunito Sans", sans-serif;
 }
+
 h1 {
-  font-size: 5rem;
-  margin: 3rem 4rem;
+	font-size: 5rem;
+	margin: 3rem 4rem;
 }
 
 .line-long {
-  height: 1px;
-  background-color: #d2d2d2;
+	height: 1px;
+	background-color: #d2d2d2;
 }
 .line-short {
-  height: 1px;
-  background-color: #d2d2d2;
+	height: 1px;
+	background-color: #d2d2d2;
 }
+

@@ -1,0 +1,200 @@
+#triangle-bottomleft {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid red;
+	border-right: 100px solid transparent;
+}
+section.my-projects {
+	width: 100%;
+	display: block;
+	margin: auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #222227;
+	box-shadow: 0 2.5rem 2rem 0.3rem #000;
+}
+
+.my-projects-div {
+	background-color: #222227;
+	margin: auto;
+	width: 70%;
+	margin: auto;
+}
+
+.my-projects .background-top {
+	width: 100%;
+	height: 17vh;
+	background-image: linear-gradient(to bottom left, transparent 50%, #c6c6c6 0);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: left, right;
+	transform: translateY(0.5%);
+}
+
+.my-projects .background-bottom {
+	width: 100%;
+	height: 17vh;
+	background-image: linear-gradient(to top left, transparent 50%, #c6c6c6 0);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: left, right;
+	transform: translateY(-0.5%);
+}
+.my-projects .background-middle {
+	width: 100%;
+	height: 82vh;
+	background-color: #c6c6c6;
+}
+
+.my-projects h1 {
+	display: flex;
+	color: #222227;
+	font-size: 5rem;
+	margin: 0;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+}
+.my-projects .line-long {
+	background-color: #222227;
+	display: block;
+	position: relative;
+	width: 22%;
+	margin: 0.2rem 1.2rem 0.7rem 1.3rem;
+}
+.my-projects .line-short {
+	background-color: #222227;
+	display: block;
+	position: relative;
+	margin: 0rem 1.3rem 2rem 13%;
+	width: 8%;
+}
+
+.my-projects .project-sample {
+	background-color: #919191;
+	width: 100%;
+	height: 100%;
+	border-radius: 25px;
+	box-shadow: 2px 2px 4px 1px rgba(100, 100, 100, 0.7),
+		-2px -2px 4px 1px rgba(100, 100, 100, 0.7);
+	border: solid 1px #797979;
+}
+
+.my-projects .project-grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 0.7fr 0.7fr;
+	grid-template-areas:
+		"project1 project2 project3"
+		"project4 project5 project6";
+	gap: 4rem;
+	height: 72%;
+	padding: 0 3rem;
+	margin: 0rem 5rem;
+	justify-items: center;
+	align-items: center;
+}
+.my-projects .project-grid-container .project-sample#project1 {
+	grid-area: project1;
+}
+.my-projects .project-grid-container .project-sample#project2 {
+	grid-area: project2;
+}
+.my-projects .project-grid-container .project-sample#project3 {
+	grid-area: project3;
+}
+.my-projects .project-grid-container .project-sample#project4 {
+	grid-area: project4;
+}
+.my-projects .project-grid-container .project-sample#project5 {
+	grid-area: project5;
+}
+.my-projects .project-grid-container .project-sample#project6 {
+	grid-area: project6;
+}
+/* Responsive area */
+
+@media screen and (min-width: 1070px) {
+	.my-projects .project-grid-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 0.4fr 0.4fr 0.4fr;
+		grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
+		gap: 2.6rem 5rem;
+		height: 75%;
+		padding: 0 2rem;
+		margin: 0rem 3rem;
+	}
+}
+
+@media screen and (max-width: 1070px) {
+	section.my-projects {
+		width: 100%;
+		margin: 0;
+	}
+	.my-projects-div {
+		width: 90%;
+	}
+	.my-projects h1 {
+		font-size: calc(5rem / 1.2);
+	}
+	.my-projects .project-grid-container {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 0.4fr 0.4fr;
+		grid-template-areas:
+			"project1 project2 project3"
+			"project4 project5 project6";
+		gap: 1.6rem;
+		height: 75%;
+		padding: 0 2rem;
+		margin: 0rem 3rem;
+	}
+
+	.my-projects .background-middle {
+		width: 100%;
+		height: 53vh;
+	}
+}
+@media screen and (max-width: 611px) {
+	.my-projects h1 {
+		font-size: calc(5rem / 1.5);
+	}
+
+	.my-projects .project-grid-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 0.4fr 0.4fr 0.4fr;
+		grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
+		gap: 1.6rem;
+		height: 75%;
+		padding: 0 2rem;
+		margin: 0rem 1rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.my-projects h1 {
+		font-size: calc(5rem / 2.1);
+	}
+	.my-projects .project-grid-container {
+		margin: 0rem 0.2rem;
+	}
+}
+
+@media screen and (min-width: 2200px) {
+	.my-projects .project-grid-container {
+		gap: 2.6rem 5rem;
+	}
+}
+@media screen and (min-width: 1800px) {
+	.my-projects .project-grid-container {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 0.4fr 0.4fr;
+		grid-template-areas:
+			"project1 project2 project3"
+			"project4 project5 project6";
+	}
+	.my-projects .background-middle {
+		height: 53vh;
+	}
+}

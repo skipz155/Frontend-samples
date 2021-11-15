@@ -1,62 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PortfolioKP</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="css/global/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/local/index.css" />
-  </head>
-  <body>
-    <div class="flex-container">
-      <section id="main">
-        <img id="main-image" src="images/code03.jpg" alt="" />
-        <div class="opacity-img"></div>
-        <img id="main-scroll-down" src="icons/white-arrow.svg" alt="" />
-        <div class="main-text">
-          <h1 id="main-name-text">Kacper Prawda</h1>
-          <p class="main-sub-text">
-            Front-end Developer <span> / </span> Designer
-          </p>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PortfolioKP</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/global/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/local/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/local/navbar.css" />
+		<link rel="stylesheet" type="text/css" href="css/local/about-me.css" />
+		<link rel="stylesheet" type="text/css" href="css/local/my-projects.css" />
+	</head>
+	<body>
+		<section id="main">
+			<img id="main-image" src="images/main.jpg" alt="" />
+			<div class="opacity-img"></div>
+			<img id="main-scroll-down" src="icons/white-arrow.svg" alt="" />
+			<div class="main-text">
+				<h1 id="main-name-text">Kacper Prawda</h1>
+				<p class="main-sub-text">
+					Front-end Developer <span> / </span> Designer
+				</p>
+			</div>
 
-        <img
-          class="social-icons"
-          id="github"
-          src="icons/github.svg"
-          alt="github"
-        />
-        <img
-          class="social-icons"
-          id="linkedin"
-          src="icons/linkedin.svg"
-          alt="linkedin"
-        />
-      </section>
-      <nav>
-        <div id="avatar">
-          <img src="images/1599039645453.jpg" alt="" />
-        </div>
-        <div id="nav-main-text">
-          <h1>Welcome to my website!</h1>
-        </div>
-        <div id="nav-sub-text">
-          <h2><- : That's me :]</h2>
-        </div>
-        <div id="nav-panel">
-          <h3>About me</h3>
-          <h3>My projects</h3>
-          <h3>My accomplishments</h3>
-          <h3>// Contact</h3>
-        </div>
-      </nav>
-    </div>
-  </body>
+			<img
+				class="social-icons"
+				id="github"
+				src="icons/github.svg"
+				alt="github"
+			/>
+			<img
+				class="social-icons"
+				id="linkedin"
+				src="icons/linkedin.svg"
+				alt="linkedin"
+			/>
+		</section>
+		<nav>
+			<div id="avatar">
+				<img src="images/1599039645453.jpg" alt="" />
+			</div>
+			<div id="nav-main-text">
+				<h1>Welcome to my website!</h1>
+			</div>
+			<div id="nav-sub-text">
+				<h2><- : That's me :]</h2>
+			</div>
+			<div id="nav-panel">
+				<h3>About me</h3>
+				<h3>My projects</h3>
+				<h3>My accomplishments</h3>
+				<h3>// Contact</h3>
+			</div>
+		</nav>
+		<section class="about-me">
+			<div class="h1-flex">
+				<h1>
+					About me
+					<figure class="line-long"></figure>
+					<figure class="line-short"></figure>
+				</h1>
+			</div>
+			<div class="text-area">
+				<article title="about me">
+					Hi,<br />
+					I'm student at Military University of Technology in Warsaw in the
+					field of Computer Science. I'm interested in software & mobile
+					development as well as UX design. During my coding adventure I have
+					used a wide variety of technologies and programming languages.
+					Currently I'm mostly developing my web development skills with
+					Javascript, HTML and CSS using React.js library. My goal is to learn
+					how to design decent looking & user friendly sites. :]
+				</article>
+			</div>
+			<div class="decoration"></div>
+		</section>
+		<div class="my-projects-div">
+			<section class="my-projects">
+				<div class="background-top"></div>
+
+				<div class="background-middle">
+					<h1>
+						My projects
+						<figure class="line-long"></figure>
+						<figure class="line-short"></figure>
+					</h1>
+					<div class="project-grid-container">
+						<div class="project-sample" id="project1"></div>
+						<div class="project-sample" id="project2"></div>
+						<div class="project-sample" id="project3"></div>
+						<div class="project-sample" id="project4"></div>
+						<div class="project-sample" id="project5"></div>
+						<div class="project-sample" id="project6"></div>
+					</div>
+				</div>
+				<div class="background-bottom"></div>
+			</section>
+		</div>
+	</body>
 </html>

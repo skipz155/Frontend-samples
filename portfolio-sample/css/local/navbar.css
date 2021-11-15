@@ -13,6 +13,9 @@ nav {
 	max-height: 15rem;
 	margin: 0;
 	padding: 0;
+
+	box-shadow: 0rem 0rem 2rem 0.3rem #000;
+	position: relative;
 }
 
 div#avatar {
@@ -124,5 +127,8 @@ nav h2 {
 	}
 	nav h2 {
 		padding-left: 0.2rem;
+	}
+	nav h3 {
+		font-size: calc(1.17rem * 1.4);
 	}
 }

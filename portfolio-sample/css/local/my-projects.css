@@ -10,21 +10,30 @@ section.my-projects {
 	margin: auto;
 	flex-direction: row;
 	flex-wrap: wrap;
+}
+.my-projects .bg-my-projects {
 	background-color: #222227;
-	box-shadow: 0 2.5rem 2rem 0.3rem #000;
+	/* height: 120vh; */
+	min-height: 120%;
+	width: 70%;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	box-shadow: 12px -10px 15px -4px #000000d7, -12px -10px 8px -4px #000000d7;
 }
 
 .my-projects-div {
-	background-color: #222227;
-	margin: auto;
-	width: 70%;
+	width: 80%;
 	margin: auto;
 }
 
 .my-projects .background-top {
 	width: 100%;
 	height: 17vh;
-	background-image: linear-gradient(to bottom left, transparent 50%, #c6c6c6 0);
+	background-image: linear-gradient(to bottom left, transparent 50%, #b6b7bb 0);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: left, right;
@@ -34,7 +43,7 @@ section.my-projects {
 .my-projects .background-bottom {
 	width: 100%;
 	height: 17vh;
-	background-image: linear-gradient(to top left, transparent 50%, #c6c6c6 0);
+	background-image: linear-gradient(to top left, transparent 50%, #b6b7bb 0);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: left, right;
@@ -43,7 +52,7 @@ section.my-projects {
 .my-projects .background-middle {
 	width: 100%;
 	height: 82vh;
-	background-color: #c6c6c6;
+	background-color: #b6b7bb;
 }
 
 .my-projects h1 {
@@ -133,6 +142,9 @@ section.my-projects {
 		margin: 0;
 	}
 	.my-projects-div {
+		width: 97%;
+	}
+	.my-projects .bg-my-projects {
 		width: 90%;
 	}
 	.my-projects h1 {
@@ -155,7 +167,7 @@ section.my-projects {
 		height: 53vh;
 	}
 }
-@media screen and (max-width: 611px) {
+@media screen and (max-width: 811px) {
 	.my-projects h1 {
 		font-size: calc(5rem / 1.5);
 	}
@@ -179,20 +191,29 @@ section.my-projects {
 	.my-projects .project-grid-container {
 		margin: 0rem 0.2rem;
 	}
+	.my-projects-div {
+		width: 100%;
+	}
 }
 
 @media screen and (min-width: 2200px) {
 	.my-projects .project-grid-container {
-		gap: 2.6rem 5rem;
+		gap: 2.6rem 6rem;
+		margin-left: 5rem;
+		margin-right: 5rem;
+		padding-left: 5rem;
+		padding-right: 5rem;
 	}
 }
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1700px) {
 	.my-projects .project-grid-container {
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 0.4fr 0.4fr;
 		grid-template-areas:
 			"project1 project2 project3"
 			"project4 project5 project6";
+		margin-left: 4rem;
+		margin-right: 4rem;
 	}
 	.my-projects .background-middle {
 		height: 53vh;

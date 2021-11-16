@@ -16,6 +16,12 @@
 		<link rel="stylesheet" type="text/css" href="css/local/navbar.css" />
 		<link rel="stylesheet" type="text/css" href="css/local/about-me.css" />
 		<link rel="stylesheet" type="text/css" href="css/local/my-projects.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="css/local/my-accomplishments.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/local/footer.css" />
 	</head>
 	<body>
 		<section id="main">
@@ -59,7 +65,7 @@
 				<h3>// Contact</h3>
 			</div>
 		</nav>
-		<section class="about-me">
+		<section class="about-me" id="about-me">
 			<div class="h1-flex">
 				<h1>
 					About me
@@ -83,6 +89,7 @@
 		</section>
 		<div class="my-projects-div">
 			<section class="my-projects">
+				<div class="bg-my-projects"></div>
 				<div class="background-top"></div>
 
 				<div class="background-middle">
@@ -103,5 +110,50 @@
 				<div class="background-bottom"></div>
 			</section>
 		</div>
+		<section class="my-accomplishments" id="my-accomplishments">
+			<div class="h1-flex">
+				<h1>
+					My accomplishments
+					<figure class="line-long"></figure>
+					<figure class="line-short"></figure>
+				</h1>
+			</div>
+			<div class="text-area">
+				<div class="acc-title">
+					<h2 class="acc-title">HackYeah</h2>
+				</div>
+				<article title="accomplishments">
+					1st place in hackathon Hackyeah 2020, in category "Veteran's app".
+					Mobile application created for Android with Xamarin.Android, Google
+					Places API and Firebase. [Team Doggers <3]
+					<div class="hackyeah-link">
+						<a
+							class="hackyeah-link"
+							href="https://hackyeah.pl/2020/12/10/the-winner-team-doggers/"
+							>https://hackyeah.pl/2020/12/10/the-winner-team-doggers/</a
+						>
+					</div>
+				</article>
+			</div>
+		</section>
+		<footer id="contact">
+			<h1>// Contact</h1>
+			<p>E-mail: <span id="mail">kacper.prawda@outlook.com</span></p>
+			<div id="icons">
+				<img
+					class="social-icons-footer"
+					id="github"
+					src="icons/github.svg"
+					alt="github"
+				/>
+				<img
+					class="social-icons-footer"
+					id="linkedin"
+					src="icons/linkedin.svg"
+					alt="linkedin"
+				/>
+			</div>
+			<p id="copyright">@2021 // Kacper Prawda</p>
+		</footer>
 	</body>
 </html>

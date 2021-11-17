@@ -41,6 +41,10 @@ div#nav-panel {
 	font-weight: bold;
 }
 
+div#nav-panel a {
+	text-decoration: none;
+	color: #222227;
+}
 div#nav-panel h3 {
 	margin-bottom: 0.3rem;
 	align-self: center;
@@ -152,3 +156,59 @@ nav h2 {
 		font-size: calc(1.17rem * 1.4);
 	}
 }
+
+/* Transitions */
+div#avatar img {
+	transition: all 0.2s ease-in-out;
+}
+div#avatar img:hover {
+	box-shadow: 0px 0px 20px -5px rgba(56, 56, 63, 1);
+	transform: translateY(-3%);
+}
+div#nav-main-text {
+	cursor: default;
+	transition: all 0.2s ease-in-out;
+}
+div#nav-main-text:hover {
+	transform: translateY(-4%);
+}
+div#nav-sub-text {
+	cursor: default;
+	transition: all 0.2s ease-in-out;
+}
+div#nav-sub-text:hover {
+	transform: translateX(-4%);
+}
+
+div#nav-panel h3 {
+	position: relative;
+	cursor: pointer;
+}
+
+div#nav-panel h3:hover {
+	transform: translateY(-5%);
+	box-shadow: 0px 10px 20px -15px #a1a2a5;
+	font-weight: bolder;
+	opacity: 1;
+}
+
+div#nav-panel h3::before {
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	height: 0.25em;
+	content: "";
+	position: absolute;
+	background-color: #222227;
+}
+
+.nav-link-ltr::before {
+	width: 2.1em;
+	opacity: 0.4;
+	bottom: -0.15em;
+}
+
+.nav-link-ltr:hover::before {
+	width: 93%;
+	opacity: 1;
+}
+/* Animations */

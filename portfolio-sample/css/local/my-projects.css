@@ -13,8 +13,7 @@ section.my-projects {
 }
 .my-projects .bg-my-projects {
 	background-color: #222227;
-	/* height: 120vh; */
-	min-height: 120%;
+	min-height: 130%;
 	width: 70%;
 	position: absolute;
 	margin-left: auto;
@@ -51,8 +50,9 @@ section.my-projects {
 }
 .my-projects .background-middle {
 	width: 100%;
-	height: 82vh;
+	height: 83vh;
 	background-color: #b6b7bb;
+	padding-bottom: 1rem;
 }
 
 .my-projects h1 {
@@ -97,11 +97,11 @@ section.my-projects {
 		"project1 project2 project3"
 		"project4 project5 project6";
 	gap: 4rem;
-	height: 72%;
 	padding: 0 3rem;
 	margin: 0rem 5rem;
 	justify-items: center;
 	align-items: center;
+	min-height: 80%;
 }
 .my-projects .project-grid-container .project-sample#project1 {
 	grid-area: project1;
@@ -123,20 +123,19 @@ section.my-projects {
 }
 /* Responsive area */
 
-@media screen and (min-width: 1070px) {
+@media screen and (min-width: 1170px) {
 	.my-projects .project-grid-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 0.4fr 0.4fr 0.4fr;
 		grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
 		gap: 2.6rem 5rem;
-		height: 75%;
 		padding: 0 2rem;
 		margin: 0rem 3rem;
 	}
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1170px) {
 	section.my-projects {
 		width: 100%;
 		margin: 0;
@@ -156,8 +155,7 @@ section.my-projects {
 		grid-template-areas:
 			"project1 project2 project3"
 			"project4 project5 project6";
-		gap: 1.6rem;
-		height: 75%;
+		gap: 3.1rem 2.1rem;
 		padding: 0 2rem;
 		margin: 0rem 3rem;
 	}
@@ -167,7 +165,7 @@ section.my-projects {
 		height: 53vh;
 	}
 }
-@media screen and (max-width: 811px) {
+@media screen and (max-width: 841px) {
 	.my-projects h1 {
 		font-size: calc(5rem / 1.5);
 	}
@@ -178,7 +176,6 @@ section.my-projects {
 		grid-template-rows: 0.4fr 0.4fr 0.4fr;
 		grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
 		gap: 1.6rem;
-		height: 75%;
 		padding: 0 2rem;
 		margin: 0rem 1rem;
 	}
@@ -194,17 +191,11 @@ section.my-projects {
 	.my-projects-div {
 		width: 100%;
 	}
-}
-
-@media screen and (min-width: 2200px) {
-	.my-projects .project-grid-container {
-		gap: 2.6rem 6rem;
-		margin-left: 5rem;
-		margin-right: 5rem;
-		padding-left: 5rem;
-		padding-right: 5rem;
+	.my-projects .background-middle {
+		padding-bottom: 1rem;
 	}
 }
+
 @media screen and (min-width: 1700px) {
 	.my-projects .project-grid-container {
 		grid-template-columns: 1fr 1fr 1fr;
@@ -216,6 +207,18 @@ section.my-projects {
 		margin-right: 4rem;
 	}
 	.my-projects .background-middle {
-		height: 53vh;
+		height: 63vh;
+	}
+}
+@media screen and (min-width: 2200px) {
+	.my-projects .project-grid-container {
+		gap: 2.6rem 6rem;
+		margin-left: 5rem;
+		margin-right: 5rem;
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+	.my-projects .background-middle {
+		height: 63vh;
 	}
 }

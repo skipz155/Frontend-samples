@@ -8,6 +8,7 @@
 	background-color: #222227;
 	box-shadow: 12px 12px 15px -4px #000000d7, -12px 12px 8px -4px #000000d7;
 	min-height: 34vh;
+	padding-bottom: 4rem;
 }
 
 .my-accomplishments h1 {
@@ -92,19 +93,23 @@
 		padding: 4rem 4rem 3rem 12rem;
 	}
 }
-@media screen and (max-width: 1270px) {
-	.my-accomplishments h1 {
-		font-size: calc(5rem / 1.2);
-	}
+@media screen and (max-width: 1170px) {
 	.my-accomplishments .text-area article {
 		font-size: calc(1.68rem / 1.6);
 	}
 	.my-accomplishments div.text-area a {
 		font-size: calc(1.13rem / 1.3);
 	}
+	.my-accomplishments {
+		width: 90%;
+		margin: auto;
+	}
 }
 
 @media screen and (max-width: 1070px) {
+	.my-accomplishments h1 {
+		font-size: calc(5rem / 1.2);
+	}
 	.my-accomplishments {
 		width: 90%;
 		margin: auto;

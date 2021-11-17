@@ -104,3 +104,11 @@
 		padding: calc(3rem / 1.2) calc(3rem / 1.9) calc(3rem / 1.2) calc(6rem / 2.1);
 	}
 }
+
+/* Transitions */
+.about-me h1 {
+	transition: all 0.2s ease-in-out;
+}
+.about-me h1:hover {
+	text-shadow: 100px 100px #000000;
+}

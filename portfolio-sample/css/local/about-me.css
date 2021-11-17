@@ -62,7 +62,7 @@
 }
 
 /* Responsive area */
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1170px) {
 	.about-me {
 		width: 90%;
 		margin: auto;
@@ -108,7 +108,16 @@
 /* Transitions */
 .about-me h1 {
 	transition: all 0.2s ease-in-out;
+	cursor: default;
 }
 .about-me h1:hover {
-	text-shadow: 100px 100px #000000;
+	text-shadow: 5px 10px #000000;
+	transform: translate(-0.1em, -0.1em);
+}
+.about-me .text-area {
+	transition: all 0.2s ease-in-out;
+}
+.about-me .text-area:hover {
+	transform: translate(0.1em, -0.1em);
+	box-shadow: -6px 6px 10px 1px #000000;
 }

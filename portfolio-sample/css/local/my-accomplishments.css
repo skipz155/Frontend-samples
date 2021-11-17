@@ -184,3 +184,28 @@
 		text-align: center;
 	}
 }
+
+/* Transitions */
+.my-accomplishments h1 {
+	transition: all 0.2s ease-in-out;
+	cursor: default;
+}
+.my-accomplishments h1:hover {
+	text-shadow: -5px 10px #000000;
+	transform: translate(0.1em, -0.1em);
+}
+
+.my-accomplishments .acc-title {
+	transition: all 0.2s ease-in-out;
+}
+.my-accomplishments div.acc-title:hover {
+	cursor: default;
+	transform: translate(-5%, 120%);
+}
+
+.my-accomplishments div.hackyeah-link {
+	transition: all 0s;
+}
+.my-accomplishments div.hackyeah-link:hover {
+	font-weight: bolder;
+}

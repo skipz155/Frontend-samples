@@ -179,6 +179,9 @@ section.my-projects {
 		padding: 0 2rem;
 		margin: 0rem 1rem;
 	}
+	.my-projects .background-middle {
+		min-height: 67vh;
+	}
 }
 
 @media screen and (max-width: 500px) {
@@ -221,4 +224,19 @@ section.my-projects {
 	.my-projects .background-middle {
 		height: 63vh;
 	}
+}
+
+/* Transitions */
+.my-projects h1 {
+	transition: all 0.2s ease-in-out;
+	cursor: default;
+}
+
+.my-projects h1:hover {
+	text-shadow: 0px 10px #6e6e6e;
+	transform: translateY(-0.1em);
+}
+
+.my-projects .project-grid-container .project-sample {
+	grid-area: project1;
 }

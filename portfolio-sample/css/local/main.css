@@ -258,6 +258,7 @@ p.main-sub-text {
 }
 
 #main-scroll-down {
+	cursor: pointer;
 	animation-duration: 2.2s;
 	animation-name: scroll-down-main-arrow;
 	animation-iteration-count: infinite;

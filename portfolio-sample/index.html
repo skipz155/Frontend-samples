@@ -27,7 +27,9 @@
 		<section id="main">
 			<img id="main-image" src="images/main.jpg" alt="" />
 			<div class="opacity-img"></div>
-			<img id="main-scroll-down" src="icons/white-arrow.svg" alt="" />
+			<a href="#navbar"
+				><img id="main-scroll-down" src="icons/white-arrow.svg" alt=""
+			/></a>
 			<div class="main-text">
 				<h1 id="main-name-text">Kacper Prawda</h1>
 				<p class="main-sub-text">
@@ -48,7 +50,7 @@
 				alt="linkedin"
 			/>
 		</section>
-		<nav>
+		<nav id="navbar">
 			<div id="avatar">
 				<img src="images/1599039645453.jpg" alt="" />
 			</div>
@@ -65,7 +67,9 @@
 				<h3 class="nav-link-ltr">
 					<a href="#my-accomplishments">My accomplishments</a>
 				</h3>
-				<h3 class="nav-link-ltr"><a href="#contact">// Contact</a></h3>
+				<h3 class="nav-link-ltr">
+					<a id="contact-navbar" href="#contact">// Contact</a>
+				</h3>
 			</div>
 		</nav>
 		<section class="about-me" id="about-me">
@@ -158,3 +162,36 @@
 		</footer>
 	</body>
 </html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$("a").on("click", function (event) {
+			if (this.hash === "#contact" || this.hash === "#my-accomplishments") {
+				event.preventDefault();
+				var hash = this.hash;
+				$("html, body").animate(
+					{
+						scrollTop: $(hash).offset().top,
+					},
+					1400,
+					function () {
+						window.location.hash = hash;
+					}
+				);
+			} else if (this.hash !== "") {
+				event.preventDefault();
+				var hash = this.hash;
+				$("html, body").animate(
+					{
+						scrollTop: $(hash).offset().top,
+					},
+					900,
+					function () {
+						window.location.hash = hash;
+					}
+				);
+			}
+		});
+	});
+</script>

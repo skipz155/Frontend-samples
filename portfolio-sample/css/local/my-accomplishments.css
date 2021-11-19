@@ -1,211 +1,220 @@
 .my-accomplishments .h1-flex {
-	display: flex;
+  display: flex;
 }
 
 .my-accomplishments {
-	width: 70%;
-	margin: auto;
-	background-color: #222227;
-	box-shadow: 12px 12px 15px -4px #000000d7, -12px 12px 8px -4px #000000d7;
-	min-height: 34vh;
-	padding-bottom: 4rem;
+  width: 70%;
+  margin: auto;
+  background-color: #222227;
+  box-shadow: 12px 12px 15px -4px #000000d7, -12px 12px 8px -4px #000000d7;
+  min-height: 34vh;
+  padding-bottom: 4rem;
 }
 
 .my-accomplishments h1 {
-	display: flex;
-	color: #d2d2d2;
-	padding-top: 0;
-	flex-direction: column;
-	background-color: #222227;
-	align-items: center;
-	margin: 1rem 3rem 0rem auto;
+  display: flex;
+  color: #d2d2d2;
+  padding-top: 0;
+  flex-direction: column;
+  background-color: #222227;
+  align-items: center;
+  margin: 1rem 3rem 0rem auto;
 }
 
 .my-accomplishments .line-long {
-	position: relative;
-	transform: translateY(-0.5rem);
-	width: 75%;
-	margin: 0;
+  position: relative;
+  transform: translateY(-0.5rem);
+  width: 75%;
+  margin: 0;
 }
 
 .my-accomplishments .line-short {
-	position: relative;
-	width: 21%;
-	margin: 1% 0 0 40%;
+  position: relative;
+  width: 21%;
+  margin: 1% 0 0 40%;
 }
 
 .my-accomplishments div.text-area {
-	padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .my-accomplishments .text-area article {
-	display: flex;
-	flex-direction: column;
-	text-align: justify;
-	font-weight: bold;
-	font-size: 1.33rem;
-	flex: 1 1 auto;
-	justify-self: center;
-	align-self: center;
-	margin: 0rem 3rem 0rem 12rem;
-	padding: 4rem 4rem 3rem 16rem;
-	border-radius: 25px;
-	background-color: #c6c6c6;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  font-weight: bold;
+  font-size: 1.33rem;
+  flex: 1 1 auto;
+  justify-self: center;
+  align-self: center;
+  margin: 0rem 3rem 0rem 12rem;
+  padding: 4rem 4rem 3rem 16rem;
+  border-radius: 25px;
+  background-color: #c6c6c6;
 }
 
 .my-accomplishments .text-area > div.acc-title {
-	display: flex;
-	position: relative;
-	top: 0;
-	left: 8%;
-	background-color: #d3d3d3;
-	width: 256px;
-	height: 95px;
-	border-radius: 15px;
-	transform: translateY(120%);
-	box-shadow: 5px 5px 1px #222227;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 8%;
+  background-color: #d3d3d3;
+  width: 256px;
+  height: 95px;
+  border-radius: 15px;
+  transform: translateY(120%);
+  box-shadow: 5px 5px 1px #222227;
 }
 
 .my-accomplishments .text-area div > h2.acc-title {
-	font-size: 2.5rem;
-	flex: 1 1 auto;
-	justify-self: center;
-	align-self: center;
-	text-align: center;
-	font-weight: bold;
+  font-size: 2.5rem;
+  flex: 1 1 auto;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
 }
 .my-accomplishments div.text-area div.hackyeah-link {
-	margin-right: 1rem;
-	align-self: flex-end;
+  margin-right: 1rem;
+  align-self: flex-end;
 }
 .my-accomplishments div.text-area a {
-	background-color: #c6c6c6;
-	font-size: 1.13rem;
-	text-transform: none;
-	text-decoration: none;
-	color: #5a5a5a;
-	width: 100%;
+  background-color: #c6c6c6;
+  font-size: 1.13rem;
+  text-transform: none;
+  text-decoration: none;
+  color: #5a5a5a;
+  width: 100%;
 }
 
 /* Responsive area */
 @media screen and (max-width: 1690px) {
-	.my-accomplishments .text-area article {
-		padding: 4rem 4rem 3rem 12rem;
-	}
+  .my-accomplishments .text-area article {
+    padding: 4rem 4rem 3rem 12rem;
+  }
 }
 @media screen and (max-width: 1170px) {
-	.my-accomplishments .text-area article {
-		font-size: calc(1.68rem / 1.6);
-	}
-	.my-accomplishments div.text-area a {
-		font-size: calc(1.13rem / 1.3);
-	}
-	.my-accomplishments {
-		width: 90%;
-		margin: auto;
-	}
+  .my-accomplishments .text-area article {
+    font-size: calc(1.68rem / 1.6);
+  }
+  .my-accomplishments div.text-area a {
+    font-size: calc(1.13rem / 1.3);
+  }
+  .my-accomplishments {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 1070px) {
-	.my-accomplishments h1 {
-		font-size: calc(5rem / 1.2);
-	}
-	.my-accomplishments {
-		width: 90%;
-		margin: auto;
-	}
+  .my-accomplishments h1 {
+    font-size: calc(5rem / 1.2);
+  }
+  .my-accomplishments {
+    width: 90%;
+    margin: auto;
+  }
 }
 @media screen and (max-width: 811px) {
-	.my-accomplishments h1 {
-		font-size: calc(5rem / 1.5);
-		margin-right: 1.1rem;
-	}
+  .my-accomplishments h1 {
+    font-size: calc(5rem / 1.5);
+    margin-right: 1.1rem;
+  }
 
-	.my-accomplishments .text-area article {
-		padding: 4rem 4rem 3rem 9rem;
-		font-size: calc(1.68rem / 1.6);
-	}
-	.my-accomplishments div.text-area a {
-		font-size: calc(1.13rem / 1.5);
-	}
+  .my-accomplishments .text-area article {
+    padding: 4rem 4rem 3rem 9rem;
+    font-size: calc(1.68rem / 1.6);
+  }
+  .my-accomplishments div.text-area a {
+    font-size: calc(1.13rem / 1.5);
+  }
 }
 @media screen and (max-width: 711px) {
-	.my-accomplishments .text-area > div.acc-title {
-		display: flex;
-		position: relative;
-		left: 0;
-		background-color: #d3d3d3;
-		width: 236px;
-		height: 65px;
-		border-radius: 15px;
-		transform: translateY(10%);
-		box-shadow: 5px 5px 1px #222227;
-		margin: auto;
-		margin-top: 2rem;
-	}
-	.my-accomplishments .text-area div > h2.acc-title {
-		font-size: 1.5rem;
-	}
-	.my-accomplishments .text-area article {
-		margin: 0rem 2rem;
-		padding: 2rem;
-	}
-	.my-accomplishments div.text-area a {
-		font-size: calc(1.13rem / 1.8);
-		text-align: center;
-	}
-	.my-accomplishments h1 {
-		margin-right: 0.8rem;
-	}
+  .my-accomplishments .text-area > div.acc-title {
+    display: flex;
+    position: relative;
+    left: 0;
+    background-color: #d3d3d3;
+    width: 236px;
+    height: 65px;
+    border-radius: 15px;
+    transform: translateY(10%);
+    box-shadow: 5px 5px 1px #222227;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .my-accomplishments .text-area div > h2.acc-title {
+    font-size: 1.5rem;
+  }
+  .my-accomplishments .text-area article {
+    margin: 0rem 2rem;
+    padding: 2rem;
+  }
+  .my-accomplishments div.text-area a {
+    font-size: calc(1.13rem / 1.8);
+    text-align: center;
+  }
+  .my-accomplishments h1 {
+    margin-right: 0.8rem;
+  }
 }
 @media screen and (max-width: 665px) {
-	.my-accomplishments h1 {
-		font-size: calc(5rem / 1.9);
-		margin-right: 0.6rem;
-	}
+  .my-accomplishments h1 {
+    font-size: calc(5rem / 1.9);
+    margin-right: 0.6rem;
+  }
 }
 @media screen and (max-width: 500px) {
-	.my-accomplishments h1 {
-		font-size: calc(5rem / 2.1);
-	}
-	.my-accomplishments .text-area article {
-		font-size: calc(1.68rem / 1.8);
-		margin: 0rem 1rem;
-		padding: 2rem;
-	}
+  .my-accomplishments h1 {
+    font-size: calc(5rem / 2.1);
+  }
+  .my-accomplishments .text-area article {
+    font-size: calc(1.68rem / 1.8);
+    margin: 0rem 1rem;
+    padding: 2rem;
+  }
 }
 @media screen and (max-width: 444px) {
-	.my-accomplishments h1 {
-		font-size: calc(5rem / 2.8);
-		margin: 1rem 0.3rem 0rem auto;
-	}
-	.my-accomplishments div.text-area a {
-		font-size: calc(1.13rem / 2.1);
-		text-align: center;
-	}
+  .my-accomplishments h1 {
+    font-size: calc(5rem / 2.8);
+    margin: 1rem 0.3rem 0rem auto;
+  }
+  .my-accomplishments div.text-area a {
+    font-size: calc(1.13rem / 2.1);
+    text-align: center;
+  }
 }
 
 /* Transitions */
 .my-accomplishments h1 {
-	transition: all 0.2s ease-in-out;
-	cursor: default;
+  transition: all 0.2s ease-in-out;
+  cursor: default;
 }
 .my-accomplishments h1:hover {
-	text-shadow: -5px 10px #000000;
-	transform: translate(0.1em, -0.1em);
+  text-shadow: -5px 10px #000000;
+  transform: translate(0.1em, -0.1em);
 }
 
 .my-accomplishments .acc-title {
-	transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .my-accomplishments div.acc-title:hover {
-	cursor: default;
-	transform: translate(-5%, 120%);
+  cursor: default;
+  transform: translate(-5%, 120%);
+}
+
+@media screen and (max-width: 711px) {
+  .my-accomplishments .acc-title {
+    transition: all 0.2s ease-in-out;
+  }
+  .my-accomplishments div.acc-title:hover {
+    transform: translate(0%, 30%);
+  }
 }
 
 .my-accomplishments div.hackyeah-link {
-	transition: all 0s;
+  transition: all 0s;
 }
 .my-accomplishments div.hackyeah-link:hover {
-	font-weight: bolder;
+  font-weight: bolder;
 }

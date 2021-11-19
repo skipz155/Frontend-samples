@@ -1,242 +1,314 @@
 #triangle-bottomleft {
-	width: 0;
-	height: 0;
-	border-bottom: 100px solid red;
-	border-right: 100px solid transparent;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid red;
+  border-right: 100px solid transparent;
 }
 section.my-projects {
-	width: 100%;
-	display: block;
-	margin: auto;
-	flex-direction: row;
-	flex-wrap: wrap;
+  width: 100%;
+  display: block;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .my-projects .bg-my-projects {
-	background-color: #222227;
-	min-height: 130%;
-	width: 70%;
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	z-index: -1;
-	box-shadow: 12px -10px 15px -4px #000000d7, -12px -10px 8px -4px #000000d7;
+  background-color: #222227;
+  min-height: 150%;
+  width: 70%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  box-shadow: 12px -10px 15px -4px #000000d7, -12px -10px 8px -4px #000000d7;
 }
 
 .my-projects-div {
-	width: 80%;
-	margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 .my-projects .background-top {
-	width: 100%;
-	height: 17vh;
-	background-image: linear-gradient(to bottom left, transparent 50%, #b6b7bb 0);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-position: left, right;
-	transform: translateY(0.5%);
+  width: 100%;
+  height: 17vh;
+  background-image: linear-gradient(to bottom left, transparent 50%, #b6b7bb 0);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: left, right;
+  transform: translateY(0.5%);
 }
 
 .my-projects .background-bottom {
-	width: 100%;
-	height: 17vh;
-	background-image: linear-gradient(to top left, transparent 50%, #b6b7bb 0);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-position: left, right;
-	transform: translateY(-0.5%);
+  width: 100%;
+  height: 17vh;
+  background-image: linear-gradient(to top left, transparent 50%, #b6b7bb 0);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: left, right;
+  transform: translateY(-0.5%);
 }
 .my-projects .background-middle {
-	width: 100%;
-	height: 83vh;
-	background-color: #b6b7bb;
-	padding-bottom: 1rem;
+  width: 100%;
+  background-color: #b6b7bb;
+  padding-bottom: 1rem;
 }
 
 .my-projects h1 {
-	display: flex;
-	color: #222227;
-	font-size: 5rem;
-	margin: 0;
-	text-align: center;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  color: #222227;
+  font-size: 5rem;
+  margin: 0;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 .my-projects .line-long {
-	background-color: #222227;
-	display: block;
-	position: relative;
-	width: 22%;
-	margin: 0.2rem 1.2rem 0.7rem 1.3rem;
+  background-color: #222227;
+  display: block;
+  position: relative;
+  width: 22%;
+  margin: 0.2rem 1.2rem 0.7rem 1.3rem;
 }
 .my-projects .line-short {
-	background-color: #222227;
-	display: block;
-	position: relative;
-	margin: 0rem 1.3rem 2rem 13%;
-	width: 8%;
+  background-color: #222227;
+  display: block;
+  position: relative;
+  margin: 0rem 1.3rem 2rem 13%;
+  width: 8%;
 }
 
 .my-projects .project-sample {
-	background-color: #919191;
-	width: 100%;
-	height: 100%;
-	border-radius: 25px;
-	box-shadow: 2px 2px 4px 1px rgba(100, 100, 100, 0.7),
-		-2px -2px 4px 1px rgba(100, 100, 100, 0.7);
-	border: solid 1px #797979;
+  background-color: #919191;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  box-shadow: 2px 2px 4px 1px rgba(100, 100, 100, 0.7),
+    -2px -2px 4px 1px rgba(100, 100, 100, 0.7);
+  border: solid 1px #797979;
+}
+
+.my-projects .project-grid-container .project-sample-details {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  opacity: 0;
+}
+.my-projects .project-grid-container .project-sample-details .sample-title {
+  text-align: center;
+  padding: 0.2rem;
+  color: #c6c6c6;
+  font-size: 1.2rem;
+}
+.my-projects .project-grid-container .project-sample-details .sample-text {
+  text-align: justify;
+  padding: 0.5rem 1rem 1rem 1rem;
+  color: #c6c6c6;
 }
 
 .my-projects .project-grid-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 0.7fr 0.7fr;
-	grid-template-areas:
-		"project1 project2 project3"
-		"project4 project5 project6";
-	gap: 4rem;
-	padding: 0 3rem;
-	margin: 0rem 5rem;
-	justify-items: center;
-	align-items: center;
-	min-height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.7fr 0.7fr;
+  grid-template-areas:
+    "project1 project2 project3"
+    "project4 project5 project6";
+  gap: 4rem;
+  padding: 0 3rem;
+  margin: 0rem 5rem;
+  justify-items: center;
+  align-items: center;
+  min-height: 80%;
 }
 .my-projects .project-grid-container .project-sample#project1 {
-	grid-area: project1;
+  grid-area: project1;
+  background-image: url("/portfolio-sample/images/projectsTemp (1).jpg");
+  background-size: cover;
 }
 .my-projects .project-grid-container .project-sample#project2 {
-	grid-area: project2;
+  grid-area: project2;
+  background-image: url("/portfolio-sample/images/projectsTemp (2).jpg");
+  background-size: cover;
 }
 .my-projects .project-grid-container .project-sample#project3 {
-	grid-area: project3;
+  grid-area: project3;
+  background-image: url("/portfolio-sample/images/projectsTemp (3).jpg");
+  background-size: cover;
 }
 .my-projects .project-grid-container .project-sample#project4 {
-	grid-area: project4;
+  grid-area: project4;
+  background-image: url("/portfolio-sample/images/projectsTemp (3).jpg");
+  background-size: cover;
 }
 .my-projects .project-grid-container .project-sample#project5 {
-	grid-area: project5;
+  grid-area: project5;
+  background-image: url("/portfolio-sample/images/projectsTemp (2).jpg");
+  background-size: cover;
 }
 .my-projects .project-grid-container .project-sample#project6 {
-	grid-area: project6;
+  grid-area: project6;
+  background-image: url("/portfolio-sample/images/projectsTemp (1).jpg");
+  background-size: cover;
 }
 /* Responsive area */
 
 @media screen and (min-width: 1170px) {
-	.my-projects .project-grid-container {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 0.4fr 0.4fr 0.4fr;
-		grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
-		gap: 2.6rem 5rem;
-		padding: 0 2rem;
-		margin: 0rem 3rem;
-	}
+  .my-projects .project-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr 0.4fr;
+    grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
+    gap: 2.6rem 5rem;
+    padding: 0.1rem 2rem;
+    margin: 0.1rem 3rem;
+  }
 }
 
 @media screen and (max-width: 1170px) {
-	section.my-projects {
-		width: 100%;
-		margin: 0;
-	}
-	.my-projects-div {
-		width: 97%;
-	}
-	.my-projects .bg-my-projects {
-		width: 90%;
-	}
-	.my-projects h1 {
-		font-size: calc(5rem / 1.2);
-	}
-	.my-projects .project-grid-container {
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 0.4fr 0.4fr;
-		grid-template-areas:
-			"project1 project2 project3"
-			"project4 project5 project6";
-		gap: 3.1rem 2.1rem;
-		padding: 0 2rem;
-		margin: 0rem 3rem;
-	}
+  section.my-projects {
+    width: 100%;
+    margin: 0;
+  }
+  .my-projects-div {
+    width: 97%;
+  }
+  .my-projects .bg-my-projects {
+    width: 90%;
+  }
+  .my-projects h1 {
+    font-size: calc(5rem / 1.2);
+  }
+  .my-projects .project-grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr;
+    grid-template-areas:
+      "project1 project2 project3"
+      "project4 project5 project6";
+    gap: 3.1rem 2.1rem;
+    padding: 0.1rem 2rem;
+    margin: 0.1rem 3rem;
+  }
 
-	.my-projects .background-middle {
-		width: 100%;
-		height: 53vh;
-	}
+  .my-projects .background-middle {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 841px) {
-	.my-projects h1 {
-		font-size: calc(5rem / 1.5);
-	}
+  .my-projects h1 {
+    font-size: calc(5rem / 1.5);
+  }
 
-	.my-projects .project-grid-container {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 0.4fr 0.4fr 0.4fr;
-		grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
-		gap: 1.6rem;
-		padding: 0 2rem;
-		margin: 0rem 1rem;
-	}
-	.my-projects .background-middle {
-		min-height: 67vh;
-	}
+  .my-projects .project-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr 0.4fr;
+    grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
+    gap: 1.6rem;
+    padding: 0.1rem 2rem;
+    margin: 0.1rem 1rem;
+  }
+  .my-projects .bg-my-projects {
+    min-height: 180%;
+  }
 }
 
 @media screen and (max-width: 500px) {
-	.my-projects h1 {
-		font-size: calc(5rem / 2.1);
-	}
-	.my-projects .project-grid-container {
-		margin: 0rem 0.2rem;
-	}
-	.my-projects-div {
-		width: 100%;
-	}
-	.my-projects .background-middle {
-		padding-bottom: 1rem;
-	}
+  .my-projects h1 {
+    font-size: calc(5rem / 2.1);
+  }
+  .my-projects .project-grid-container {
+    margin: 0.1rem 0.2rem;
+  }
+  .my-projects-div {
+    width: 100%;
+  }
+  .my-projects .background-middle {
+    padding-bottom: 1rem;
+  }
+  .my-projects .project-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;
+    grid-template-areas: "project1" "project2" "project3" "project4" "project5" "project6";
+    gap: 2.1rem 1.6rem;
+    padding: 0.1rem 2rem;
+    margin: 0.1rem 1rem;
+  }
+  .my-projects .bg-my-projects {
+    min-height: 220%;
+  }
+
+  .my-projects .project-grid-container .project-sample-details .sample-title {
+    font-size: 0.9rem;
+  }
+  .my-projects .project-grid-container .project-sample-details .sample-text {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (min-width: 1700px) {
-	.my-projects .project-grid-container {
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 0.4fr 0.4fr;
-		grid-template-areas:
-			"project1 project2 project3"
-			"project4 project5 project6";
-		margin-left: 4rem;
-		margin-right: 4rem;
-	}
-	.my-projects .background-middle {
-		height: 63vh;
-	}
+  .my-projects .project-grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr;
+    grid-template-areas:
+      "project1 project2 project3"
+      "project4 project5 project6";
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
 }
 @media screen and (min-width: 2200px) {
-	.my-projects .project-grid-container {
-		gap: 2.6rem 6rem;
-		margin-left: 5rem;
-		margin-right: 5rem;
-		padding-left: 5rem;
-		padding-right: 5rem;
-	}
-	.my-projects .background-middle {
-		height: 63vh;
-	}
+  .my-projects .project-grid-container {
+    gap: 2.6rem 6rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 /* Transitions */
 .my-projects h1 {
-	transition: all 0.2s ease-in-out;
-	cursor: default;
+  transition: all 0.2s ease-in-out;
+  cursor: default;
 }
 
 .my-projects h1:hover {
-	text-shadow: 0px 10px #6e6e6e;
-	transform: translateY(-0.1em);
+  text-shadow: 0px 10px #6e6e6e;
+  transform: translateY(-0.1em);
+}
+.my-projects .project-grid-container .project-sample {
+  transition: all ease-in;
+  cursor: pointer;
+}
+.my-projects .project-grid-container .project-sample:hover {
+  width: 110%;
+  height: 110%;
+  box-shadow: 2px 2px 5px 3px rgba(100, 100, 100, 1),
+    -2px -2px 5px 3px rgba(100, 100, 100, 1);
+  border-color: #222227;
 }
 
-.my-projects .project-grid-container .project-sample {
-	grid-area: project1;
+.my-projects .project-grid-container .project-sample-details {
+  transition: animation 2s ease-out;
+}
+
+.my-projects .project-grid-container .project-sample-details:hover {
+  animation-name: translate-left-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes translate-left-out {
+  0% {
+    background-color: #22222700;
+    opacity: 0;
+  }
+  100% {
+    background-color: #222227d0;
+    opacity: 1;
+  }
 }

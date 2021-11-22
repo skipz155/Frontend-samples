@@ -105,6 +105,12 @@
 	}
 }
 
+@media screen and (max-height: 642px) {
+	.about-me .text-area article {
+		font-size: calc(1.68rem / 2.45);
+	}
+}
+
 /* Transitions */
 .about-me h1 {
 	transition: all 0.2s ease-in-out;

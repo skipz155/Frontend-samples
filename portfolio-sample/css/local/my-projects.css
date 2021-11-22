@@ -294,6 +294,27 @@ section.my-projects {
 	}
 }
 
+@media screen and (max-height: 841px) {
+	.my-projects .bg-my-projects {
+		min-height: 304vh;
+	}
+}
+@media screen and (max-height: 741px) {
+	.my-projects .bg-my-projects {
+		min-height: 335vh;
+	}
+}
+@media screen and (max-height: 641px) {
+	.my-projects .bg-my-projects {
+		min-height: 361vh;
+	}
+}
+@media screen and (max-height: 612px) {
+	.my-projects .bg-my-projects {
+		min-height: 481vh;
+	}
+}
+
 /* Transitions */
 .my-projects h1 {
 	transition: all 0.2s ease-in-out;

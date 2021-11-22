@@ -1,6 +1,6 @@
 # Porfolio website
 ## Introduction
-The aim of this project is was develop decent looking simple page website.
+The aim of this project is to develop decent looking simple page website.
 Project includes my portfolio page writen only with HTML, CSS and a bit of JQuery.
 
 ## Technologies
